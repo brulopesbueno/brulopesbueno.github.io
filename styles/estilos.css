@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    background-size: auto 140vh;
+    font-family: 'Shadows Into Light', cursive;
+    height: 100vh;
+}
+
+
+/* se a tela ter pelo menos 400 px, carrega esse estilo. Para ajustar a tela pc ou celular*/
+
+@media (min-width: 400px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-subtitles,
+.site-title {
+    color: black;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.site-title {
+    font-size: 4em;
+    font-style: italic;
+    font-family: 'Handlee', cursive;
+}
+
+.site-subtitle {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 3em;
+}
+
+.portfloio {
+    padding: 2em;
+}
+
+.portfolio h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(184, 74, 93);
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 4%;
+    grid-template-columns: repeat(4, 22%);
+    justify-content: center;
+    height: 50vh;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(4, 22%);
+        height: 40vh;
+    }
+    .portfolio figure {
+        text-align: center;
+        height: 50vh;
+    }
+    .img-portfolio {
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        object-position: left bottom;
+        border-radius: 50px;
+    }
+    .contato {
+        text-align: center;
+    }
+}
